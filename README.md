@@ -102,3 +102,15 @@ git remote add origin <<URL>> # Replace URL with your git URL (e.g. https://gith
 git push origin master
 # Enter your username and password. NOTE: If you have 2-factor auth (2FA) enabled on GitHub, you need to use a personal access token (https://github.com/settings/tokens) instead of a password.
 ```
+
+#### Use `.gitignore` to ignore files
+
+FloydHub automatically creates a `.gitignore` file for you. If you have files that you don't want to check in (e.g. data, models, Jupyter Notebook checkpoints, etc.), you can add them to it.
+
+Note: `.gitignore` is a hidden file. You can open it from your Workspace Terminal using the `nano` terminal editor command.
+
+```
+root@floydhub:/floyd/home#  nano .gitignore
+```
+
+![gitignore](./assets/gitignore.PNG)
